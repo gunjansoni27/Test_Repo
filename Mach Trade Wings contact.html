@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mach Trade Wings</title>
+  <link rel="shortcut icon" href="https://www.tradefairdates.com/logos/mach_logo_5266.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  .navbar {
+
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  } 
+
+  .navbar .navbar-brand img {
+    max-width: 90px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #000;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .navbar {
+      letter-spacing: 0.1em;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      padding: 0.5em 1em;
+    }
+
+    .search-and-icons {
+      width: 50%;
+    }
+
+    .search-and-icons form {
+      flex: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar .navbar-brand img {
+      max-width: 7em;
+    }
+
+    .navbar .navbar-collapse {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+
+    .search-and-icons {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .navbar .navbar-brand img {
+    max-width: 250px;
+  }
+
+  .logotext {
+    /* text-shadow: 1px 1px 2px rgb(243, 227, 9); */
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Lora'
+  }
+
+  .background {
+    background-image: url(https://media.istockphoto.com/photos/contact-us-email-phone-message-contact-communication-web-landing-page-picture-id884374384?k=6&m=884374384&s=170667a&w=0&h=K9FVxAdIzdO2vxexan_Mmu5Tcz_5k-dRmvhRsPiCwBQ=);
+    width: 101%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bgtext1 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .bgtext2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 110px;
+  }
+
+  .contactus {
+    color: rgb(58, 51, 129);
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 50px;
+  }
+
+
+  .ullist {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+  }
+
+  .ullist:hover {
+    color: orange;
+  }
+
+  #socialLinks {
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-right: 100px;
+
+  }
+  @media screen and (max-width:500px) {
+    .topbar {
+      justify-content: center;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    #socialLinks {
+      flex-direction: column;
+      padding: 0px;
+      margin: auto;
+    }
+
+    .card {
+      margin-bottom: 2rem;
+    }
+
+    .card2 {
+      margin: 0px;
+      margin-bottom: 2rem;
+    }
+
+    .card3 {
+      margin: 0px;
+      margin-bottom: 2rem;
+    }
+
+    .servicesContainer {
+      margin: 5px;
+    }
+
+    .contactData {
+      justify-content: center;
+    }
+  }
+  
+</style>
+
+<body>
+
+  <!-- start header area -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 topbar d-flex justify-content-between" style="background-color: rgb(58,51,129);">
+  
+        <div class="d-flex flex-wrap contactData">
+          <div>
+            <i class="fa-solid fa-phone"
+              style="font-size: 14px; color: rgb(255, 255, 255); padding-left: 50px; padding-top: 20px; padding-bottom: 15px;"></i>
+            <p style="color: white; display: inline;">+91-11-45067749, +91-11-45067750</p>
+            <i class="fa-solid fa-envelope"
+              style="font-size: 14px; color: rgb(255, 255, 255); padding-left: 40px; padding-top: 20px; padding-bottom: 15px;"></i>
+            <p style="color: white; display: inline;"> mtwpl@mtwpl.com </p>
+          </div>
+  
+        </div>
+        <p id="socialLinks" style="color: white;">Follow Us:<i class="fa-brands fa-twitter mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;  margin-top: 10px;"></i><i
+            class="fa-brands fa-instagram mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;"></i><i
+            class="fa-brands fa-youtube mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px; color: white;"></i><i
+            class="fa-brands fa-facebook mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR SECTION -->
+
+  <body style="margin: 0px;padding: 0px;">
+    <nav class="navbar navbar-expand-md bg-body-tertiary" style=" margin-bottom: 0px;">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="Mach_Trade_Wings_Pvt_Ltd-removebg-preview.png" alt="image">
+          <p class="logotext">TRADE WINGS PVT. LTD.</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Mach Trade Wings pvt. ltd..html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Mach Trade wings about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./Mach Trade Wings our services.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Our Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Mach Trade Wings our services.html#service-1">Import & Export
+                    Custom
+                    clearance</a></li>
+                <li><a class="dropdown-item" href="./Mach Trade Wings our services.html#service-2">Import & Export
+                    Forwarding</a>
+                </li>
+                <li><a class="dropdown-item" href="./Mach Trade Wings our services.html#service-3">Third Country
+                    Exports</a></li>
+                <li><a class="dropdown-item" href="./Mach Trade Wings our services.html#service-4">DGFT services - All
+                    authorizations</a></li>
+                <li><a class="dropdown-item" href="./Mach Trade Wings our services.html#service-5">Embassy
+                    endorsements</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Mach Trade Wings contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="Mach Trade Wings contact.html" class="btn btn-dark">Get a free quote</a>
+            </li>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+      <div class="row background">
+        <p class="bgtext1">Contact Us</p>
+        <p class="bgtext2">Home / Contact Us</p>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <h2 class="contactus">Contact Us</h2>
+          <p style="color: red;font-size: 18px; font-weight: 600; text-decoration: underline;">Address</p>
+          <p style="font-weight: 600;">Mach Trade Wings Private Limited <br>
+            2ND FLOOR, 2G, DCM BUILDING, 16, BARAKHAMBA ROAD, CONNAUGHT PLACE, <br>
+            NEW DELHI- 110001, INDIA
+          </p>
+
+          <i class="fa-solid fa-phone"></i>
+          <p style="display: inline; font-weight: 600; font-size: 18px;"> +91-11-45067749, +91-11-45067750 </p>
+          <br>
+          <i class="fa-solid fa-envelope" style="margin-top: 30px;"></i>
+          <p style="display: inline; font-weight: 600; font-size: 18px;"> mtwpl@mtwpl.com </p>
+
+        </div>
+
+        <div class="col-sm-7">
+          <h3 style="margin-top: 50px; color:rgb(58, 51, 129);">Get In Touch With Us</h3>
+          <form id="contact_form" name="contact_form" method="post" style="margin-top: 60px; margin-bottom: 50px;">
+            <div class="mb-5 row">
+              <div class="col">
+                <label style="font-weight: 700;"> Name</label>
+                <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name"
+                  placeholder="First Name">
+              </div>
+              <div class="col">
+                <label style="font-weight: 700;">Email address</label>
+                <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name"
+                  placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="mb-5 row">
+              <div class="col">
+                <label for="email_addr" style="font-weight: 700;">Phone</label>
+                <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                  placeholder="Phone">
+              </div>
+              <div class="col">
+                <label for="phone_input" style="font-weight: 700;">Country</label>
+                <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                  placeholder="Country">
+              </div>
+            </div>
+            <div class="mb-5">
+              <label for="message" style="font-weight: 700;">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn px-4 btn-lg" style="background-color: rgb(58, 51, 129); color: white;">Send
+              a Message</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid" style="background-color:#252525; padding-bottom: 100px; margin-bottom: 30px;">
+      <div class="row">
+        <div class="col-sm-6" style="color: white; padding-top: 100px; padding-left: 50px;">
+          <h2 style="font-family:'Lato';">Mach Trade Wings pvt. ltd.</h2>
+          <p>Mach Trade Wings Pvt Ltd, established in 24th July 1995, has rapidly emerged as a trusted name
+            in the logistics and trade services industry. Our mission is to simplify global trade and provide end-to-end
+            solutions that cater to the diverse needs of businesses involved in international commerce. Our extensive
+            range of services is designed to ensure that your goods move seamlessly across borders, whether by air or
+            sea.
+          </p>
+        </div>
+        <div class="col-sm-3" style="color: white; padding-top: 100px; line-height: 220%; padding-left: 50px;">
+          <h3 style="font-family:'Lato';">Quick Links</h3>
+          <ul class="d-flex flex-column">
+            <a href="./Mach Trade Wings pvt. ltd..html" class="ullist">
+              Home
+            </a>
+            <a href="./Mach Trade wings about.html" class="ullist">
+              About Us
+            </a>
+            <a href="./Mach Trade Wings our services.html" class="ullist">
+              Our Services
+            </a>
+            <a href="./Mach Trade Wings contact.html" class="ullist">
+              Contact
+            </a>
+          </ul>
+        </div>
+        <div class="col-sm-3" style="color: white; padding-top: 100px;">
+          <h3 style="font-family:'Lato';">Contact info</h3>
+          <i class="fa-solid fa-location-dot"></i>
+          <p style="display: flex; display: inline; font-size: 14px;">2G DCM BUILDING, 2ND FLOOR, 16 BARAKHAMBA ROAD, CONNAUGHT PLACE,
+            NEW DELHI- 110001, INDIA</p>
+          <br>
+          <i class="fa-solid fa-phone" style="padding-top: 20px;"></i>
+          <p style="display: flex; display: inline; ">+91-11-45067749, +91-11-45067750</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </body>
+
+</html>

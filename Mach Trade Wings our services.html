@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mach Trade Wings</title>
+  <link rel="shortcut icon" href="https://www.tradefairdates.com/logos/mach_logo_5266.jpg" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+<style>
+  .navbar {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar .navbar-brand img {
+    max-width: 90px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #000;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .navbar {
+      letter-spacing: 0.1em;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      padding: 0.5em 1em;
+    }
+
+    .search-and-icons {
+      width: 50%;
+    }
+
+    .search-and-icons form {
+      flex: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar .navbar-brand img {
+      max-width: 7em;
+    }
+
+    .navbar .navbar-collapse {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+
+    .search-and-icons {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .navbar .navbar-brand img {
+    max-width: 250px;
+  }
+
+  .logotext {
+    /* text-shadow: 1px 1px 2px rgb(243, 227, 9); */
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Lora'
+  }
+
+  .background {
+    background-image: url(https://thrivewithsupport.co.uk/app/uploads/2021/06/services-banner.jpg);
+    width: 101%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bgtext1 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .bgtext2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 110px;
+  }
+
+  .firstheading {
+    color: rgb(58, 51, 129);
+    padding-top: 50px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-bottom: 40px;
+  }
+
+  .ollist1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+
+  .ullist {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+  }
+
+  .ullist:hover {
+    color: orange;
+  }
+
+  #socialLinks {
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-right: 100px;
+
+  }
+
+  @media screen and (max-width:500px) {
+    .topbar {
+      justify-content: center;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    #socialLinks {
+      flex-direction: column;
+      padding: 0px;
+      margin: auto;
+    }
+
+    .card {
+      margin-bottom: 2rem;
+    }
+
+    .card2 {
+      margin: 0px;
+      margin-bottom: 2rem;
+    }
+
+    .card3 {
+      margin: 0px;
+      margin-bottom: 2rem;
+    }
+
+    .servicesContainer {
+      margin: 5px;
+    }
+
+    .contactData {
+      justify-content: center;
+    }
+  }
+</style>
+
+<body>
+  <!-- start header area -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 topbar d-flex justify-content-between " style="background-color: rgb(58,51,129);">
+
+        <div class="d-flex flex-wrap contactData">
+          <div>
+            <i class="fa-solid fa-phone"
+              style="font-size: 14px; color: rgb(255, 255, 255); padding-left: 50px; padding-top: 20px; padding-bottom: 15px;"></i>
+            <p style="color: white; display: inline;">+91-11-45067749, +91-11-45067750</p>
+            <i class="fa-solid fa-envelope"
+              style="font-size: 14px; color: rgb(255, 255, 255); padding-left: 40px; padding-top: 20px; padding-bottom: 15px;"></i>
+            <p style="color: white; display: inline;"> mtwpl@mtwpl.com </p>
+          </div>
+
+        </div>
+        <p id="socialLinks" style="color: white;">Follow Us:<i class="fa-brands fa-twitter mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;  margin-top: 10px;"></i><i
+            class="fa-brands fa-instagram mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;"></i><i
+            class="fa-brands fa-youtube mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px; color: white;"></i><i
+            class="fa-brands fa-facebook mx-2"
+            style="border: 1px solid rgb(255, 255, 255); border-radius: 25px; padding: 5px 5px 5px 5px;color: white;"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR SECTION -->
+
+  <body style="margin: 0px;padding: 0px;">
+    <nav class="navbar navbar-expand-md bg-body-tertiary" style=" margin-bottom: 0px;">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="Mach_Trade_Wings_Pvt_Ltd-removebg-preview.png" alt="image">
+          <p class="logotext">TRADE WINGS PVT. LTD.</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Mach Trade Wings pvt. ltd..html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Mach Trade wings about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./Mach Trade Wings our services.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Our Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#service-1">Import & Export Custom
+                    clearance</a></li>
+                <li><a class="dropdown-item" href="#service-2">Import & Export Forwarding</a>
+                </li>
+                <li><a class="dropdown-item" href="#service-3">Third Country Exports</a></li>
+                <li><a class="dropdown-item" href="#service-4">DGFT services - All
+                    authorizations</a></li>
+                <li><a class="dropdown-item" href="#service-5">Embassy endorsements</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Mach Trade Wings contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="Mach Trade Wings contact.html" class="btn btn-dark">Get a free quote</a>
+            </li>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class="row background">
+        <p class="bgtext1">Our Services</p>
+        <p class="bgtext2">Home / Our Services</p>
+      </div>
+    </div>
+
+
+
+    <div class="container" id="service-1">
+      <div class="row">
+        <div class="col-sm-7">
+          <h3 class="firstheading"> Import & Export Custom Clearance </h3>
+          <ul>
+            <li class="ollist1"> Import Custom Clearance</li>
+            <p>Mach Trade Wings Pvt Ltd specializes in import custom clearance for air and sea shipments, providing
+              door-to-door service that
+              simplifies the complexities of international trade. Our team manages all aspects of customs documentation,
+              tariff classification,
+              and duty payment, ensuring compliance with local regulations. We work closely with customs authorities to
+              expedite the clearance process,
+              minimizing delays and ensuring your goods are delivered promptly. Our expertise in handling various types
+              of cargo, including perishable
+              and hazardous goods, makes us a reliable partner for your import needs.</p>
+            <li class="ollist1"> Export Custom Clearance</li>
+            <p>Our export custom clearance services by air and sea are designed to ensure smooth and efficient
+              processing of your outbound shipments.
+              Mach Trade Wings Pvt Ltd handles all necessary documentation, tariff assessments, and regulatory
+              compliance, ensuring that your exports
+              meet the required standards of the destination country. We provide door-to-door service, coordinating with
+              carriers and customs authorities
+              to expedite the clearance process. Our experienced team is dedicated to minimizing delays and ensuring
+              that your goods reach their
+              international destinations without any complications.</p>
+          </ul>
+        </div>
+        <div class="col-sm-5">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/1/VU/YT/PA/127890507/import-export-custom-clearance-services-500x500.jpg"
+            alt="" width="100%" style="margin-top: 90px;">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container" id="service-2">
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-7">
+          <h3 class="firstheading"> Import & Export Forwarding </h3>
+          <ul>
+            <li class="ollist1">Import Forwarding</li>
+            <p>
+              Mach Trade Wings Pvt Ltd offers comprehensive import forwarding services by air and sea, ensuring seamless
+              door-to-door delivery.
+              We manage the entire process, from the moment your goods leave the supplier to their arrival at your
+              doorstep. Our services include
+              cargo handling, documentation, and providing complete visibility throughout the shipment journey. With our
+              extensive global network
+              and expertise in navigating international logistics, we ensure timely and cost-effective delivery, making
+              us your trusted partner for
+              all your import needs.
+            </p>
+            <li class="ollist1">Export Forwarding</li>
+            <p>
+              Our export forwarding services by air and sea are designed to streamline the export process for businesses
+              of all sizes.
+              Mach Trade Wings Pvt Ltd handles every aspect of your export shipment, from pickup at your location to
+              delivery at the destination,
+              ensuring compliance with international regulations. We offer end-to-end solutions, including packaging,
+              documentation, and coordination with carriers,
+              providing a hassle-free experience. With our focus on efficiency and reliability, we ensure that your
+              goods reach global markets quickly and securely.
+            </p>
+          </ul>
+        </div>
+        <div class="col-sm-5">
+          <img src="https://www.legalwiz.in/wp-content/uploads/How-to-start-import-export-business-in-india.jpg" alt=""
+            width="100%" style="margin-top: 90px; height: 400px;">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" id="service-3">
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-7">
+          <h3 class="firstheading"> Third Country Exports </h3>
+          <p>
+            Mach Trade Wings Pvt Ltd offers specialized third-country export services, facilitating trade between two
+            foreign countries through
+            a third-party location. This service is ideal for businesses looking to leverage international trade
+            agreements and optimize their
+            supply chains. We manage all aspects of the transaction, including documentation, compliance with
+            international trade laws, and
+            coordination with multiple parties. Our expertise in third-country exports allows us to provide tailored
+            solutions that meet the unique
+            needs of our clients, ensuring smooth and efficient cross-border transactions.
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <img src="https://i.ytimg.com/vi/rM8Dt89h8iI/maxresdefault.jpg" alt="" width="100%"
+            style="margin-top: 70px; height: 230px;">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" id="service-4">
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-sm-7">
+          <h3 class="firstheading"> DGFT services - All authorizations </h3>
+          <p>
+            Our DGFT services at Mach Trade Wings Pvt Ltd encompass a wide range of authorizations, including Advance
+            Authorizations,
+            Export Promotion Capital Goods (EPCG) schemes, and Remission of Duties and Taxes on Exported Products
+            (RODTEP).
+            We assist businesses in navigating the complex regulatory landscape of international trade, ensuring
+            compliance with government
+            policies while maximizing benefits. Our team handles the entire process, from application to approval,
+            providing expert guidance and support.
+            With our in-depth knowledge of DGFT regulations, we help clients unlock various incentives and streamline
+            their export operations.
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <img src="https://5.imimg.com/data5/RT/QX/CF/SELLER-18949636/dgft-code-services-1000x1000.png" alt=""
+            width="100%" style="margin-top: 70px; height: 230px;">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container" id="service-5">
+      <div class="row" style="margin-top: 30px; margin-bottom: 100px;">
+        <div class="col-sm-7">
+          <h3 class="firstheading"> Embassy Endorsements </h3>
+          <p>
+            Mach Trade Wings Pvt Ltd offers embassy endorsement services, ensuring that all your export documentation
+            meets the necessary legal
+            requirements for international trade. We assist with the authentication of certificates, invoices, and other
+            critical documents,
+            coordinating with embassies and consulates to obtain the required endorsements. Our services are designed to
+            ensure that your documents
+            are processed accurately and efficiently, reducing the risk of delays in your international transactions.
+            With our expertise in handling
+            embassy endorsements, we provide a seamless experience that ensures compliance with all necessary protocols.
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.nLoUZxQVAxEWn3hx_Q-v3QHaCp&pid=Api&P=0&h=180" alt="" width="100%"
+            style="margin-top: 70px; height: 230px;">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid" style="background-color:#252525; padding-bottom: 100px; margin-bottom: 30px;">
+      <div class="row">
+        <div class="col-sm-6" style="color: white; padding-top: 100px; padding-left: 50px;">
+          <h2 style="font-family:'Lato';">Mach Trade Wings pvt. ltd.</h2>
+          <p>Mach Trade Wings Pvt Ltd, established in 24th July 1995, has rapidly emerged as a trusted name
+            in the logistics and trade services industry. Our mission is to simplify global trade and provide end-to-end
+            solutions that cater to the diverse needs of businesses involved in international commerce. Our extensive
+            range of services is designed to ensure that your goods move seamlessly across borders, whether by air or
+            sea.
+          </p>
+        </div>
+        <div class="col-sm-3" style="color: white; padding-top: 100px; line-height: 220%; padding-left: 50px;">
+          <h3 style="font-family:'Lato';">Quick Links</h3>
+          <ul class="d-flex flex-column">
+            <a href="./Mach Trade Wings pvt. ltd..html" class="ullist">
+              Home
+            </a>
+            <a href="./Mach Trade wings about.html" class="ullist">
+              About Us
+            </a>
+            <a href="./Mach Trade Wings our services.html" class="ullist">
+              Our Services
+            </a>
+            <a href="./Mach Trade Wings contact.html" class="ullist">
+              Contact
+            </a>
+          </ul>
+        </div>
+        <div class="col-sm-3" style="color: white; padding-top: 100px;">
+          <h3 style="font-family:'Lato';">Contact info</h3>
+          <i class="fa-solid fa-location-dot"></i>
+          <p style="display: flex; display: inline; font-size: 14px;">2G DCM BUILDING, 2ND FLOOR, 16 BARAKHAMBA ROAD, CONNAUGHT PLACE,
+            NEW DELHI- 110001, INDIA</p>
+          <br>
+          <i class="fa-solid fa-phone" style="padding-top: 20px;"></i>
+          <p style="display: flex; display: inline; ">+91-11-45067749, +91-11-45067750</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+
+</html>
